@@ -70,7 +70,6 @@ class MockitoDemoApplicationTests {
     void testMockMocked() {
         Mockito
                 .when(greeterMock.greeting(any()))
-                //                .thenCallRealMethod()
                 .thenReturn("Good night, Tester. This is a mock.");
 
         String message = greeterMock.greeting("Tester");
