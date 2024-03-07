@@ -1,2 +1,2 @@
 Some basic experiments with Mockito.
-Checking the difference between Mock and Spy.
+How to get mocks using abstract factory instead of a DI system.
