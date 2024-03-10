@@ -20,6 +20,13 @@ class BrickFactoryTest {
 
     @AfterEach
     public void resetMocks() {
+        //We need to reset the mocks after each test
+        // so the tests remain independent.
+        // We don't want changes in one test method
+        // to impact the next ones. Also, the order of
+        // running the tests shouldn't matter.
+        // If we use common mocking for all test methods,
+        // then we would do it in @BeforeEach method.
         Mockito.reset(BrickFactory.getFactory());
     }
 
